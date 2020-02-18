@@ -1,7 +1,7 @@
 <nav class="grey darken-3">
   <div class="container">
     <div class="nav-wrapper">
-      <a href="/stories" class="brand-logo center">StoryBooks</a>
+      <a href="/" class="brand-logo center">StoryBooks</a>
       <a href="#" data-activates="main-menu" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>
       <!-- RIGHT NAV -->
       <ul class="right hide-on-small-only">
@@ -9,15 +9,14 @@
         <li><a href="/dashboard">Welcome {{user.firstName}}</a></li>
         <li><a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
         {{else}}
-        <li><a href="/stories"><i class="fa fa-book"></i>Public Stories</a></li>
+        <li><a href="/stories"><i class="fa fa-book"></i> Public Stories</a></li>
         {{/if}}
       </ul>
-      <!--SIDE MENU-->
-
+      <!-- SIDE MENU -->
       <ul class="sidenav" id="main-menu">
 
         {‌{#if user}}
-  {‌{else}}
+      {‌{else}}
   <li>
     <a class="btn red darken-1" style="padding-left:30px;" href="/auth/google"><i class="fa fa-google left"></i>LOGIN WITH GOOGLE</a>
   </li>
