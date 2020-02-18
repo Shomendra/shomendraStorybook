@@ -12,8 +12,8 @@ const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-ac
 
 // load model
 
-require('./models/user');
-require('./models/story')
+require('./models/User');
+require('./models/Story')
 
 //passport config
 require('./config/passport')(passport);
